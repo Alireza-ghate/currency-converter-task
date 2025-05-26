@@ -1,54 +1,76 @@
-# React + TypeScript + Vite
+# Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+یک اپلیکیشن ساده برای تبدیل نرخ ارز بین دلار و ریال ایران. این پروژه به‌عنوان یک تسک کارآموزی طراحی شده و بر پایه‌ی React و TypeScript پیاده‌سازی شده است.
 
-Currently, two official plugins are available:
+⸻
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## اهداف پروژه
 
-## Expanding the ESLint configuration
+1. تمرین در ساختاردهی کامپوننت‌ها
+2. پیاده‌سازی یک فرم ساده با مدیریت state
+3. رعایت اصول کد تمیز (Clean Code) و سادگی در طراحی
+4. نمایش توانایی در استفاده از React + TypeScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+⸻
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Live Demo
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+مشاهده دمو در Vercel (https://currency-converter-task-tau.vercel.app/)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+⸻
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## تکنولوژی‌های استفاده‌شده
+
+1. React: کتابخانه اصلی برای ساخت UI
+2. TypeScript: افزایش ایمنی و خوانایی کد
+3. Vite: محیط توسعه سریع برای پروژه‌های React
+4. Tailwind: برای استایل‌دهی ساده
+5. GitHub: نسخه‌سازی و اشتراک‌گذاری پروژه
+
+⸻
+
+## ویژگی‌ها
+
+- تبدیل نرخ دلار به ریال و برعکس
+- گرفتن نرخ دلخواه از کاربر به عنوان ورودی
+- عدم نیاز به API خارجی برای سادگی پروژه
+- نمایش نتیجه در لحظه
+- محدود کردن ورودی‌ها فقط به اعداد معتبر
+- استفاده از کامپوننت‌های قابل استفاده مجدد
+- کد ساختار یافته با state lifting (بدون استفاده از Context)
+
+⸻
+
+## نحوه اجرا
+
+### نصب وابستگی‌ها
+
+npm install
+
+### اجرای لوکال
+
+npm run dev
+
+⸻
+
+## نحوه استفاده
+
+1.  نرخ دلار را وارد کنید (مثلاً: 58000)
+2.  مقدار دلخواه را وارد کرده و واحد (ریال/دلار) را انتخاب کنید
+3.  نتیجه‌ی تبدیل به‌صورت لحظه‌ای یا با کلیک روی دکمه نمایش داده می‌شود
+
+⸻
+
+## نکات مهم در پیاده‌سازی
+
+1. برای سادگی پروژه از کتابخانه‌های مدیریت فرم یا Context API استفاده نشده است.
+2. تمام state‌ها به صورت لوکال مدیریت شده‌اند و در صورت نیاز به اشتراک، به والد منتقل شده‌اند.
+3. ساختار کامپوننت‌ها به گونه‌ای تنظیم شده که هر یک تنها یک وظیفه مشخص داشته باشد (Single Responsibility Principle).
+4. ورودی‌ها به‌گونه‌ای تنظیم شده‌اند که فقط عدد مثبت را بپذیرند، بنابراین اعتبارسنجی اضافی نیاز نبوده است.
+
+⸻
+
+## منابع مورد استفاده
+
+1. Vite Documentation (https://vitejs.dev/)
+2. Tailwind Css Documentation (https://tailwindcss.com/docs)
