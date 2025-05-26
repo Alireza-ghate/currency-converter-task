@@ -1,20 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap");
+
 @import "tailwindcss";
 
+/* define css variables */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --font-base: "Vazirmatn", sans-serif;
+  --font-weight-base: 400;
+  --line-height-base: 1.5;
+  --color-text: oklch(27.8% 0.033 256.848);
+  --color-bg: oklch(92% 0.003 264.542);
 }
 
-/* body {
-  font-family: ;
-} */
+/* use css variables in body */
+body {
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-weight: var(--font-weight-base);
+  line-height: var(--line-height-base);
+}
