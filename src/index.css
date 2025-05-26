@@ -4,7 +4,11 @@
 
 /* custom class */
 .form-row {
-  @apply flex items-center mb-10 gap-3;
+  @apply flex items-center mb-10 gap-3 sm:mb-8 last:mb-0 flex-wrap;
+}
+
+.label {
+  @apply font-semibold text-xl;
 }
 
 /* define css variables */

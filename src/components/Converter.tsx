@@ -14,7 +14,7 @@ function Converter() {
   const convertedAmountToRial = amount * exchangeRate;
 
   return (
-    <div className="bg-gray-100 border border-gray-300 rounded-md w-full max-w-[500px] min-w-[300px] mx-auto px-3 py-6">
+    <div className="bg-gray-100 border border-gray-300 rounded-md w-full max-w-[500px] min-w-[300px] mx-auto px-3 sm:px-8 py-6">
       <form>
         <InputAmount
           amount={amount}
