@@ -1,3 +1,4 @@
+import CurrencySelector from "./CurrencySelector";
 import InputAmount from "./InputAmount";
 
 function Converter() {
@@ -9,6 +10,7 @@ function Converter() {
     <div className="bg-gray-100 border border-gray-300 rounded-md w-full max-w-[500px] min-w-[300px] mx-auto px-3 py-6">
       <form>
         <InputAmount />
+        <CurrencySelector />
       </form>
     </div>
   );

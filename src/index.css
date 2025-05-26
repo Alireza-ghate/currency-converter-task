@@ -2,6 +2,11 @@
 
 @import "tailwindcss";
 
+/* custom class */
+.form-row {
+  @apply flex items-center mb-10 gap-3;
+}
+
 /* define css variables */
 :root {
   --font-base: "Vazirmatn", sans-serif;
