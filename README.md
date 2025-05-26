@@ -1,4 +1,4 @@
-                                                                                                                                                                                                 # Currency Converter
+ # Currency Converter
 
 یک اپلیکیشن ساده برای تبدیل نرخ ارز بین دلار و ریال ایران. این پروژه به‌عنوان یک تسک کارآموزی طراحی شده و بر پایه‌ی React و TypeScript پیاده‌سازی شده است.
 
@@ -45,11 +45,11 @@
 
 ### نصب وابستگی‌ها
 
-                                                                                                                                                                                                        npm install
+npm install
 
 ### اجرای لوکال
 
-                                                                                                                                                                                                        npm run dev
+ npm run dev
 
 
 
