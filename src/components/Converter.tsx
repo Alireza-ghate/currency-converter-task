@@ -1,4 +1,5 @@
 import CurrencySelector from "./CurrencySelector";
+import ExchangeRateInput from "./ExchangeRateInput";
 import InputAmount from "./InputAmount";
 
 function Converter() {
@@ -11,6 +12,7 @@ function Converter() {
       <form>
         <InputAmount />
         <CurrencySelector />
+        <ExchangeRateInput />
       </form>
     </div>
   );
