@@ -1,7 +1,12 @@
-import { useState } from "react";
+type CurrencySelectorProps = {
+  conversionType: string;
+  setConversionType: (value: string) => void;
+};
 
-function CurrencySelector() {
-  const [conversionType, setConversionType] = useState("usd");
+function CurrencySelector({
+  conversionType,
+  setConversionType,
+}: CurrencySelectorProps) {
   return (
     <div className="form-row">
       <label className="label" htmlFor="currency">

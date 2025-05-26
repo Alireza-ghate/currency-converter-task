@@ -1,8 +1,12 @@
-import { useState } from "react";
 import Input from "./Input";
 
-function InputAmount() {
-  const [amount, setAmount] = useState(0);
+type InputAmountProps = {
+  amount: number;
+  setAmount: (value: number) => void;
+  conversionType: string;
+};
+
+function InputAmount({ amount, setAmount, conversionType }: InputAmountProps) {
   return (
     <div className="form-row">
       <label className="label" htmlFor="inputAmount">
@@ -17,7 +21,7 @@ function InputAmount() {
           min={0}
           step={1000}
         />
-        {/* <span>{conversionType === "usd" ? "ریال" : "دلار"}</span> */}
+        <span>{conversionType === "usd" ? "ریال" : "دلار"}</span>
       </div>
     </div>
   );

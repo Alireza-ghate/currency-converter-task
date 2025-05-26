@@ -1,8 +1,14 @@
-import { useState } from "react";
 import Input from "./Input";
 
-function ExchangeRateInput() {
-  const [exchangeRate, setExchangeRate] = useState(0);
+type ExchangeRateInputProps = {
+  exchangeRate: number;
+  setExchangeRate: (value: number) => void;
+};
+
+function ExchangeRateInput({
+  exchangeRate,
+  setExchangeRate,
+}: ExchangeRateInputProps) {
   return (
     <div className="form-row">
       <label className="label" htmlFor="rateInput">
