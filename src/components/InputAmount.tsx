@@ -1,4 +1,4 @@
-import Input from "./Input";
+import Input from "../ui/Input";
 
 type InputAmountProps = {
   amount: number;
